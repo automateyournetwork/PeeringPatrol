@@ -1,0 +1,8 @@
+{
+  "name": "peering-patrol",
+  "private": true,
+  "description": "IXP peering LAN hygiene educational game. Open index.html to play.",
+  "scripts": {
+    "test": "node --test"
+  }
+}

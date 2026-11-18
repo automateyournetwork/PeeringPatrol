@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Peering Patrol</title>
+<meta name="description" content="An arcade game that teaches which traffic belongs on an IX peering LAN.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;800;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="playfield" tabindex="0" aria-label="Peering LAN playfield. Tab locks a packet, Space zaps it, L lets it through in practice mode, F opens the shift log."></canvas>
+<header id="hud" aria-label="Shift status"></header>
+<div id="banner" aria-hidden="true"></div>
+<ol id="cards" aria-hidden="true"></ol>
+<aside id="log" class="collapsed" aria-label="Shift log" aria-hidden="true">
+  <div class="log-head">
+    <h2>Shift log</h2>
+    <p>Every explanation from this shift. <kbd>Esc</kbd> returns to the playfield.</p>
+  </div>
+  <ol id="log-list" tabindex="-1"></ol>
+</aside>
+<div id="screens"></div>
+<div id="live" class="sr-only" aria-live="polite" aria-atomic="false"></div>
+<noscript><p class="noscript">Peering Patrol needs JavaScript enabled.</p></noscript>
+
+<!-- Script order is a contract: specs/001-peering-patrol-game/contracts/data-files.md -->
+<script src="engine/namespace.js"></script>
+<script src="data/lan.js"></script>
+<script src="data/packets.js"></script>
+<script src="data/phases.js"></script>
+<script src="engine/rng.js"></script>
+<script src="engine/rules.js"></script>
+<script src="engine/scoring.js"></script>
+<script src="engine/spawner.js"></script>
+<script src="engine/labels.js"></script>
+<script src="engine/feedback.js"></script>
+<script src="engine/validate.js"></script>
+<script src="engine/motion.js"></script>
+<script src="engine/effects.js"></script>
+<script src="engine/audio.js"></script>
+<script src="engine/renderer.js"></script>
+<script src="engine/input.js"></script>
+<script src="engine/storage.js"></script>
+<script src="views/screens.js"></script>
+<script src="views/cards.js"></script>
+<script src="views/hud.js"></script>
+<script src="views/menu.js"></script>
+<script src="views/briefing.js"></script>
+<script src="views/summary.js"></script>
+<script src="views/challenge.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

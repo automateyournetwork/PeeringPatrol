@@ -1,0 +1,13 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+*.tmp
+.vscode/
+.idea/
+
+# Node (dev-only test runner; no dependencies)
+node_modules/
+*.log
+.env*
+coverage/

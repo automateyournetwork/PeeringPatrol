@@ -17,7 +17,7 @@ game:
   card_image_alt: "The Peering Patrol playfield: a glowing IX peering LAN in the center, eight member routers around it flashing red after a CDP leak, and explanation cards at the bottom left."
   repo: "https://github.com/fpessoanunes/PeeringPatrol"
   repo_path: ""
-  license: Apache-2.0
+  license: unknown
 
 creator:
   name: "Fabio Pessoa Nunes"

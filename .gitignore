@@ -11,3 +11,7 @@ node_modules/
 *.log
 .env*
 coverage/
+
+# Python bytecode (Spec Kit scripts)
+__pycache__/
+*.pyc
